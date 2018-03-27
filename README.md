@@ -10,24 +10,24 @@
 const theme = require('../package.json').theme;
 
 {
-  test: /\.(css|less)$/,
-  use: [{
-    loader: require.resolve('postcss-loader'),
-    options: {
-      ident: 'postcss',
-      plugins: () => [
-        px2rem({
-          remUnit: 75,
-          propWhiteList: []
-        }), //重点    //设计稿根据750px(iphone6)
-      ],
-    },
-  }, {
-    loader: require.resolve('less-loader'),
-    options: {
-      modifyVars: theme //重点
-    },
-  }, ]
+    test: /\.(css|less)$/,
+    use: [{
+        loader: require.resolve('postcss-loader'),
+        options: {
+            ident: 'postcss',
+            plugins: () => [
+                px2rem({
+                    remUnit: 75,
+                    propWhiteList: []
+                }), //重点    //设计稿根据750px(iphone6)
+            ],
+        },
+    }, {
+        loader: require.resolve('less-loader'),
+        options: {
+            modifyVars: theme //重点
+        },
+    }, ]
 }
               
 ## 配置package.json
