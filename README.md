@@ -10,9 +10,9 @@
 const theme = require('../package.json').theme;
 
 {
-    test: /\.(css|less)$/,
-    use: [{
-        loader: require.resolve('postcss-loader'),
+	test: /\.(css|less)$/,
+	use: [{
+		loader: require.resolve('postcss-loader'),
         options: {
             ident: 'postcss',
             plugins: () => [
