@@ -6,7 +6,7 @@
 
 ## 配置config.dev.js
 
-
+<pre>
 const theme = require('../package.json').theme;
 
 {
@@ -29,17 +29,18 @@ const theme = require('../package.json').theme;
         },
     }, ]
 }
-              
+ </pre>            
 ## 配置package.json
 
 增加配置
+<pre>
 {
   "theme": {
     "hd":"2px", //重点高清配置2倍
     "@primary-color": "#ce4f35"
   }
 }
-
+</pre>
 
 ## html模板配置
 
