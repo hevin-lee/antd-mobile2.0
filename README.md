@@ -4,7 +4,7 @@
 
 配置过程如下：
 
-#config.dev.js配置
+## 配置config.dev.js
 
 
 const theme = require('../package.json').theme;
@@ -30,7 +30,7 @@ const theme = require('../package.json').theme;
              ]
 }
               
-#package.json
+## 配置package.json
 
 增加配置
 {
@@ -41,7 +41,7 @@ const theme = require('../package.json').theme;
 }
 
 
-#html模板配置
+## html模板配置
 
 html代码在head里面引入 <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> 即可，也可以直接保存到本地，引入也可
               
